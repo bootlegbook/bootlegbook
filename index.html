@@ -2,7 +2,7 @@
 <head></head>
 
 <font face="Arial" color="#77dd77">
-<h1>Bootlegbook! (Alpha 0.0.9)<h3>
+<h1>Bootlegbook! (Alpha 0.1.0)<h3>
 
 <hr>
 <p>
@@ -118,14 +118,38 @@ Chatroom! (Change name in second box)
 
 
 <p>
-<iframe src="http://chat.addachat.com/?bgs=on&bg=black&name=cps&room=BOOTLEGCHATISBACK&sidebar=on&format=on&images=on" height="600" width="850" name="gFrameTop"></iframe>
-CHBT_channel="18384718";
-CHBT_profanityfilter="1";
-CHBT_position="inline";
-</script>
-<script type="text/javascript" src="https://www.chatbutton.com/c.js">
-</script>
+<html>
+<head>
+  <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+  <link rel="stylesheet" href="http://hackeryou.com/wp-content/themes/hackeryou/style.css">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+</head>
+<body>
 
+<div class="wrapper">
+  <h1>SlackerYou</h1>
+  <p class="desc">🔥 A RealTime Chat built with jQuery + FireBase!</p>
+
+
+  <div class="messagesWrap">
+    <ul class="messages"></ul>
+  </div>
+
+  <form action="" class="chat">
+    <input type='text' id='nameInput' placeholder='Username' required maxlength=10> 
+    <input type='text' id='messageInput'  placeholder='Type a message...' required maxlength=140>
+    <input type="submit" value="Send →">
+    <small>Created for learning purposes - get the code at <a href="https://github.com/HackerYou/SlackerYou">github.com/HackerYou/SlackerYou</a>. Be nice when testing.</small>
+  </form>
+
+
+</div>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
 <p>
 <br>
 <p><h1>Post Here 
